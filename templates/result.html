@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      .statbox {
+        display: flex;
+        align-items: center;
+      }
+      .Graph {
+        flex-grow: 2;
+        max-width: 20%;
+        height: auto;
+        display: block;
+        margin-right: 50px auto;
+      }
+      h1 {
+        text-align: autoi;
+        font-size: 50px;
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Housing Price Prediction Result</title>
+  </head>
+  <body>
+    <h1>Housing Price Prediction Result</h1>
+    <div class="statbox">
+      <img
+        src="{{ url_for('static', filename='regression_line.png') }}"
+        alt="Graph"
+        class="Graph"
+      />
+      <p>Model Predicted Price: $<strong>{{price_prediction}}</strong>K</p>
+      <!-- Display the regression line graph -->
+    </div>
+  </body>
+</html>

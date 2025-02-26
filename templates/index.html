@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      input {
+        font-size: 20px;
+      }
+      p {
+        text-align: center;
+        font-size: 18px;
+      }
+      .btn {
+        padding: 10px 20px;
+        margin-top: 10px;
+      }
+      .f1 {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 30px;
+        font-size: 30px;
+      }
+      h1 {
+        text-align: center;
+        font-size: 50px;
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Housing Price Prediction</title>
+  </head>
+  <body>
+    <h1>Housing Price Prediction</h1>
+    <form class="f1" action="/predict" method="post">
+      <label for="area">Area (in Sqfeet):</label>
+      <input type="number" id="area" name="area" required /><br />
+      <label for="">Number of bedrooms:</label>
+      <input type="number" id="bedrooms" name="bedrooms" required /><br />
+      <label for="bathrooms">Number of bathrooms:</label>
+      <input type="number"id="bathrooms"name="bathrooms" required /><br />
+      <label for="stories">Number of Storeys:</label>
+      <input type="number"id="stories"name="stories" required /><br />
+      <label for="mainroad">Mainroad (1:Yes,0:No):</label>
+      <input type="number"id="mainroad"name="mainroad" required /><br />
+      <button class="btn" type="submit">Predict</button>
+    </form>
+  </body>
+</html>
